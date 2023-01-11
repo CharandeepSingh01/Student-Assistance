@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fee Payment</title>
+    <link rel="shortcut icon" href="DD.png" type="image/png">
+	<link rel="stylesheet" href="fee.css">
+	
+</head>
+
+<body>
+	<div id="we">FEE PAYMENT</div><div id="fd">
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'Credit Card')"id="defaultOpen">Credit Card</button>
+		<button class="tablinks" onclick="openCity(event, 'Debit Card')">Debit Card</button>
+		<button class="tablinks" onclick="openCity(event, 'Debit Card + ATM Pin')">Debit Card + ATM Pin</button>
+		<button class="tablinks" onclick="openCity(event, 'Internet Banking')">Internet Banking</button>
+		<button class="tablinks" onclick="openCity(event, 'Wallet/Cash Card')">Wallet/Cash Card</button>
+		<button class="tablinks" onclick="openCity(event, 'IMPS')">IMPS</button>
+	</div>	
+	<form action="Thank.html">
+	<div id="Credit Card" class="tabcontent">
+		
+		<h3>Pay by Credit Card</h3>
+		<p>Card Number</p>
+		<input pattern=.{16} type="number" name="card" placeholder="Enter Card Number" required>
+	
+		<p>Expiration Date</p>
+		<input type="month" name="month" placeholder="Month" required>
+	
+		<p>CVV/CVC</p>
+		<input pattern=.{3} type="number" name="cvv" required>
+	
+		<p>Card Holder Name</p>
+		<input type="text" name="name" placeholder="Enter Card Holder Name" required>
+		
+		<input type="submit" value="Submit" id="mn">
+		<input type="reset" value="Reset" id="cv">
+		
+	</div></form><form action="Thank.html">
+	
+	<div id="Debit Card" class="tabcontent">
+		
+		<h3>Pay by Debit Card</h3>
+		<p>Card Number</p>
+		<input pattern=.{16,} type="number" name="card" placeholder="Enter Card Number" required>
+	
+		<p>Expiration Date</p>
+		<input type="month" name="month" placeholder="Month" required>
+	
+		<p>CVV/CVC</p>
+		<input pattern=.{3} type="number" name="cvv" required>
+	
+		<p>Card Holder Name</p>
+		<input type="text" name="name" placeholder="Enter Card Holder Name" required>
+		
+		<input type="submit" value="Submit" id="mn">
+		<input type="reset" value="Reset" id="cv">
+	</div></form><form action="Thank.html">
+	
+	<div id="Debit Card + ATM Pin" class="tabcontent">
+		<h3>Pay by Debit Card + ATM Pin</h3>
+		<p>Card Number</p>
+		<input pattern=.{16} type="number" name="card" placeholder="Enter Card Number" required>
+	
+		<p>Expiration Date</p>
+		<input type="month" name="month" placeholder="Month" required>
+	
+		<p>CVV/CVC</p>
+		<input pattern=.{3} type="number" name="cvv" required>
+	
+		<p>Card Holder Name</p>
+		<input type="text" name="name" placeholder="Enter Card Holder Name" required>
+		
+		<p>Pin</p>
+		<input pattern=.{6} type="number" name="pwd" placeholder="Enter Pin" required>
+		
+		<input type="submit" value="Submit" id="mn">
+		<input type="reset" value="Reset" id="cv">
+	</div></form><form action="Thank.html">
+	
+	<div id="Internet Banking" class="tabcontent">
+		<h3>Pay by Internet Banking</h3>
+		<p>User ID</p>
+		<input type="text" name="userid" required>
+	
+		<p>ATM Pin/Password</p>
+		<input pattern=.{8} type="password" name="pwd" required>
+		
+		<input type="submit" value="Submit" id="mn">
+		<input type="reset" value="Reset" id="cv">
+	</div></form><form action="Thank.html">
+	
+	<div id="Wallet/Cash Card" class="tabcontent">
+		<h3>Pay by Wallet/Cash Card</h3>
+		<p>Card Number / UPI ID</p>
+		<input type="text" name="card" placeholder="Enter Card Number" required>
+	
+		<p>Pin</p>
+		<input pattern=.{6} type="number" name="pwd" placeholder="Enter Pin" required>
+		
+		<input type="submit" value="Submit" id="mn">
+		<input type="reset" value="Reset" id="cv">
+	</div></form><form action="Thank.html">
+	
+	<div id="IMPS" class="tabcontent">
+		<h3>Pay by IMPS</h3>
+		<p>Beneficiary Mobile Number</p>
+		<input pattern=.{10} type="number" name="mobile" required>
+	
+		<p>Beneficiary MMID</p>
+		<input type="number" name="mmid" required>
+	
+		<p>Amount</p>
+		<input type="number" name="amount" required>
+	
+		<p>Remarks</p>
+		<input type="text" name="remarks" required>
+		
+		<p>Transaction Password</p>
+		<input pattern=.{8} type="password" name="pwd" required>
+		
+		<input type="submit" value="Submit" id="mn">
+		<input type="reset" value="Reset" id="cv">
+	</div>
+	</form>
+	</div>
+	
+	<script src="fee.js"></script>
+		
+</body>
+</html>

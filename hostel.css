@@ -1,0 +1,151 @@
+body
+        {
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          background-image:url("nm.jpg");
+          margin:0px;
+          padding:0px;
+
+        }
+        
+        #Username
+        {
+          border:none;
+          border-bottom:1px solid;
+        }
+        #ff{
+          background-color: black;
+          color:#ffbb05;
+          display:block;
+          position:fixed;
+          width:100%;
+          height:70px;
+          text-align: center;
+          margin:0px auto;
+          padding-top:50px;
+          font-size: 32px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color:#ffbb05;
+          text-shadow: 0px 0px 5px white;
+          border: #ffbb05 solid 5px;
+        }
+        #gh{
+  margin:0px 30%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#tt{
+  background-color: #ffbb05;
+  color: black;
+  padding:8px;
+  border: #4388cc 4px solid;
+}
+#tt:hover{
+  background-color:#4388cc;
+  color: black;
+  padding:8px;
+  border: #ffbb05 4px solid;
+  border-radius: 4px;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+}
+        
+        .screen
+        {
+          width:100%;
+          height:20px;
+          background:#4388cc;
+          color:#fff;
+          line-height:20px;
+          font-size:15px;
+        }
+        
+        .smallBox::before
+        {
+          content:".";
+          width:15px;
+          height:15px;
+          float:left;
+          margin-right:10px;
+        }
+        .greenBox::before
+        {
+          content:"";
+          background:Green;
+        }
+        .redBox::before
+        {
+          content:"";
+          background:Red;
+        }
+        .emptyBox::before
+        {
+          content:"";
+          box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+            background-color:#ccc;
+        }
+        
+        .seats
+        {
+          border:1px solid red;background:yellow;
+        } 
+        
+        
+        
+        .seatGap
+        {
+          width:40px;
+        }
+        
+        .seatVGap
+        {
+          height:40px;
+        }
+        
+        table
+        {
+          text-align:center;
+        }
+        
+        
+        .Displaytable
+        {
+          text-align:center;
+          border: #ffbb05 4px solid;
+        }
+        .Displaytable td, .Displaytable th {
+            border: 1px solid;
+            text-align: left;
+            color:#ffbb05;
+        }
+        
+        textarea
+        {
+          border:none;
+          background:transparent;
+          color: #ffbb05;
+          font-size: 15px;
+          font-weight: bold;
+        }
+        
+        
+        
+        input[type=checkbox] {
+            width:0px;
+            margin-right:18px;
+        }
+        
+        input[type=checkbox]:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            vertical-align:middle;
+            text-align: center;
+            box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+            background-color:#ccc;
+        }
+        
+        input[type=checkbox]:checked:before {
+            background-color:Green;
+            font-size: 15px;
+        }
