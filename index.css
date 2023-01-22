@@ -240,8 +240,8 @@ p {
   background-image:url("img/image4.jpg");
 }
 .box{
-  height:35rem;
-  width:35rem;
+  height:30rem;
+  width:30rem;
   position:relative;
   display:flex;
   margin:50px auto;
