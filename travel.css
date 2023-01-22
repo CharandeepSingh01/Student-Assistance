@@ -1,3 +1,6 @@
+html{
+  font-size: 10px;
+}
 body{
     background-image: url('Cab.jpg');
     background-repeat: no-repeat;
@@ -15,14 +18,14 @@ body{
     border:5px solid #ffbb05;
     display:block;
     position: fixed;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     z-index: 1;
 }
 .container{
     margin-top: 120px;
-    margin-left:300px
+    
 }
 fieldset{
     
