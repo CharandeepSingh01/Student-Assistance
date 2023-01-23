@@ -33,6 +33,7 @@ p {
   margin-bottom:15px;
   border:#ffbb05 solid 4px;
   padding:5px;
+  background-color: rgba(0,0,0,0.5);
 }
 #xd:hover{
   font-size: 14px;
