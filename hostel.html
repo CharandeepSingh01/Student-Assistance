@@ -20,8 +20,8 @@
 <div id="gh"><br><br>
         <div class="inputForm">
         <center>
-          <b>Name *:</b> <input type="text" id="Username" required>
-          <b>Number of Seats *:</b> <input type="number" id="Numseats" required>
+          <b>Name *:</b><br> <input type="text" id="Username" required><br>
+          <b>Number of Seats *:</b><br> <input type="number" id="Numseats" required>
           <br/><br/>
           <button id="tt" onclick="takeData()">Start Selecting</button>
         </center>
@@ -35,11 +35,11 @@
          <p id="notification"></p>
           <tr>
             <td colspan="14"><div class="screen">ROOMS</div></td>
-            <td rowspan="20">
+            <!-- <td rowspan="20">
               <div class="smallBox greenBox">Selected Seat</div> <br/>
               <div class="smallBox redBox">Reserved Seat</div><br/>
               <div class="smallBox emptyBox">Empty Seat</div><br/>
-            </td>
+            </td> -->
             
             <br/>
           </tr>
@@ -232,6 +232,17 @@
             <td><input type="checkbox" class="seats" value="J11"></td>
             <td><input type="checkbox" class="seats" value="J12"></td>
         </tr>
+        <tr>
+          <td colspan="14">
+            <div class="smallBox greenBox"><b style="color:#ffbb05">Selected Seat&nbsp;&nbsp;</b></div> 
+              <div class="smallBox redBox"><b style="color:#ffbb05">Reserved Seat&nbsp;</b></div>
+              <div class="smallBox emptyBox"><b style="color:#ffbb05">Empty Seat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></div>
+
+
+
+          </td>
+
+        </tr>
           
           
         </table>
@@ -251,9 +262,9 @@
             <th>Seats</th>
           </tr>
           <tr>
-            <td><textarea id="nameDisplay"></textarea></td>
-            <td><textarea id="NumberDisplay"></textarea></td>
-            <td><textarea id="seatsDisplay"></textarea></td>
+            <td><textarea id="nameDisplay" rows="2" cols="4"></textarea></td>
+            <td><textarea id="NumberDisplay" rows="2" cols="4"></textarea></td>
+            <td><textarea id="seatsDisplay" rows="2" cols="4"></textarea></td>
           </tr>
         </table>
         </center>

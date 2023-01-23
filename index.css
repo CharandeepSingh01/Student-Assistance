@@ -14,11 +14,15 @@ p {
   font-size: 14px;
   color: #5a5a5a;
   font-weight: 300;
-  line-height: 25px;
+  
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 #cc{
-  position: absolute;
-  top:34%;
+  position: relative;
+  margin-top: 250px;
 }
 #xd{
   font-size: 14px;
@@ -62,11 +66,12 @@ p {
   z-index:1;
   background-color: rgba(0,0,0,0.5);
   display:block;
+  /* padding-top: 10px; */
   position:absolute;
   top: -98px;
   width: 100%;
   text-align: center;
-  font-size: 5rem;
+  font-size: 40px;
   font-weight: bold;
   border:5px solid;
   box-sizing: border-box;
@@ -78,6 +83,7 @@ p {
 }
 
 .centered:hover{
+  z-index: 1;
   background-color:black;
   color:whitesmoke;
   border: 5px solid #ffbb05;
@@ -268,8 +274,8 @@ opacity: 0;
 text-align: center;
 padding-top: 140px;
 position: relative;
-height: 350px;
-width: 350px;
+height: 300px;
+width: 300px;
 text-shadow: 0px 0px 5px #ffbb05;
 justify-content: center;
 }
@@ -286,13 +292,14 @@ justify-content: center;
 a{
   text-decoration: none;
   list-style: none;
+  inherits: none;
 }
 
 .first-slide {
   text-align:center;
   background-color: #fff;
   width: 100%;
-  margin-top: 550px;
+  margin-top: 85px;
 }
 
 .heading {
@@ -362,7 +369,7 @@ footer p {
 ========================================
 */
 
-@media (max-width: 850px){
+@media (max-width: 930px){
   .cd-slider-nav ul li h6 {
     font-size: 13px;
     text-transform: uppercase;
@@ -399,6 +406,7 @@ footer p {
     line-height: 80px;
     margin: 0 auto;
     text-align: center!important;
+    margin-top: 100px;
   }
 
   .cd-slider-nav ul {
@@ -440,4 +448,55 @@ footer p {
 
   .first-content p {
     margin: 0px 30px;
-  }}
+  }
+  #cc{
+    margin-top: 410px;
+  }
+  .centered{
+    z-index:1;
+    background-color: rgba(0,0,0,0.5);
+    display:block;
+    position:absolute;
+    top: -188px;
+    width: 100%;
+    max-height: 70px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border:5px solid;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 5px red;
+    margin-top: 100px;
+    margin-left: -5px;
+    margin-right: -10px;
+   
+  }
+  .first-slide {
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 105px;
+}
+  
+}
+@media (max-width: 600px){
+  .centered{
+    z-index:1;
+    background-color: rgba(0,0,0,0.5);
+    display:block;
+    position:absolute;
+    top: -188px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border:5px solid;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 5px red;
+    margin-top: 100px;
+    margin-left: -5px;
+    margin-right: -10px;
+   
+  }
+
+}

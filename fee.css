@@ -1,8 +1,12 @@
 
+html{
+	background: darkred;
+}
 	body{
 		margin:0px;
 		background-image: url("py.png");
 		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	#mn ,#cv{
 		border:2px solid #ffbb05;
@@ -21,13 +25,14 @@
 		background-color: red;
 	}
 	#fd{
-		height:600px;
-		margin: 0px 25% ;
+		height:800px;
+		/* margin: 0px 25% ; */
 		position:relative;
 		background-color: rgba(0,0,0,0.4);
 		color:#ffbb05;
 		font-weight: bold;
 		text-shadow: 0px 0px 5px black;
+		padding-left: 10em;
 
 	}
 	#we{

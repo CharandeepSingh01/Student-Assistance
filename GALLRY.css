@@ -4,16 +4,20 @@
     margin: 0px;
     }
     .box{
-  height:350px;
-  width:350px;
-  position:relative;
-  display:block;
-  margin:50px auto;
-  padding:25px;
-  border:5px solid  #ffbb05;
-  box-shadow: 0px 0px 10px 10px ;
-  border-radius: 20px;
-}
+      height:20rem;
+      width:20rem;
+      position:relative;
+      display:flex;
+      margin:50px auto;
+      padding:25px;
+      border:5px solid  #ffbb05;
+      box-shadow: 0px 0px 10px 10px ;
+      border-radius: 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+
 .box:hover{
   outline: 4px dashed white;
   border-radius: 2px;
@@ -49,14 +53,18 @@ a{
   list-style: none;
 }
 .gg{
-  display: flex;
-  /* flex-basis: */
-  border:5px solid black;
-  background-color: red;
-  color: black;
-  height:520px;
-  width:100%;
-  box-sizing: border-box;
-  text-align: center;
-
+  
+    display: flex;
+    flex-basis:auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border:5px solid black;
+    background-color: red;
+    color: black;
+    height:auto;
+    width:100%;
+    box-sizing: border-box;
+    text-align: center;
+  
+  
 }

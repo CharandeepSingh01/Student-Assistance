@@ -29,8 +29,26 @@ body
           border: #ffbb05 solid 5px;
         }
         #gh{
-  margin:0px 30%;
+  
   background-color: rgba(0, 0, 0, 0.4);
+}
+.smallBox.redBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.smallBox.greenBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.smallBox.emptyBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 #tt{
   background-color: #ffbb05;
